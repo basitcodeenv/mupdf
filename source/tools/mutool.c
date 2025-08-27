@@ -35,6 +35,7 @@
 
 int muconvert_main(int argc, char *argv[]);
 int mudraw_main(int argc, char *argv[]);
+int muimage_main(int argc, char *argv[]);
 int mutrace_main(int argc, char *argv[]);
 int murun_main(int argc, char *argv[]);
 
@@ -64,6 +65,7 @@ static struct {
 	{ murun_main, "run", "run javascript" },
 #endif
 	{ mudraw_main, "draw", "convert document" },
+	{ muimage_main, "image", "extract images from document" },
 	{ muconvert_main, "convert", "convert document (with simpler options)" },
 #if FZ_ENABLE_PDF
 	{ pdfaudit_main, "audit", "produce usage stats from PDF files" },

@@ -333,6 +333,7 @@ $(PKCS7_LIB) : $(PKCS7_OBJ)
 MUTOOL_SRC := source/tools/mutool.c
 MUTOOL_SRC += source/tools/muconvert.c
 MUTOOL_SRC += source/tools/mudraw.c
+MUTOOL_SRC += source/tools/muimage.c
 MUTOOL_SRC += source/tools/murun.c
 MUTOOL_SRC += source/tools/mutrace.c
 MUTOOL_SRC += source/tools/mubar.c
