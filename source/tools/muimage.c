@@ -42,10 +42,10 @@ static void extract_page_images(fz_document *doc, int page_number, const char *o
 
                 char namebuf[128];
                 fz_snprintf(namebuf, sizeof(namebuf),
-                            "page-%03d-img-%04d", page_number, img_index++);
+                            "page-%03d-img-%04d.png", page_number, img_index++);
 
                 char pathbuf[1024];
-                fz_snprintf(pathbuf, sizeof(pathbuf), "%s/%s.png", outdir, namebuf);
+                fz_snprintf(pathbuf, sizeof(pathbuf), "%s/%s", outdir, namebuf);
                 fz_save_pixmap_as_png(ctx, pix, pathbuf);
 
 				printf("%s\n", namebuf);
